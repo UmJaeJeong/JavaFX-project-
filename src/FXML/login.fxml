@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="464.0" prefWidth="764.0"
+	style="-fx-background-color: #2D344B;"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="Controller.LoginController">
+	<children>
+		<ImageView fitHeight="63.0" fitWidth="79.0" layoutX="323.0"
+			layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../MAIN/images/005-sports-car.png" />
+			</image>
+		</ImageView>
+		<Label layoutX="307.0" layoutY="77.0" prefHeight="28.0"
+			prefWidth="63.0" text="Car" textFill="#2196f3">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<Label layoutX="354.0" layoutY="77.0" prefHeight="28.0"
+			prefWidth="84.0" text="Review" textFill="#a0a2ab">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<Button fx:id="signup" layoutX="670.0" layoutY="19.0"
+			mnemonicParsing="false" onAction="#signUP" prefHeight="45.0"
+			prefWidth="84.0"
+			style="-fx-background-color: #151923; -fx-border-color: #a0a2ab;"
+			text="Sign_UP" textFill="#a0a2ab">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Button>
+		<Button layoutX="547.0" layoutY="19.0" mnemonicParsing="false"
+			prefHeight="34.0" prefWidth="114.0"
+			style="-fx-background-color: #2D344B;" text="Not member?"
+			textFill="#a0a2ab">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Button>
+		<Button layoutX="19.0" layoutY="19.0" mnemonicParsing="false"
+			prefHeight="34.0" prefWidth="136.0"
+			style="-fx-background-color: #2D344B;" text="Back to preview"
+			textFill="#a0a2ab">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Button>
+		<ImageView fitHeight="28.0" fitWidth="29.0" layoutX="9.0"
+			layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../MAIN/images/left-angle-bracket.png" />
+			</image>
+		</ImageView>
+		<TextField fx:id="username" layoutX="256.0" layoutY="168.0"
+			maxWidth="276.0" minWidth="122.0" prefHeight="34.0" prefWidth="276.0"
+			promptText="Username"
+			style="-fx-background-color: #2D344B; -fx-border-color: #2D344B #2D344B #a0a2ab #2D344B;"
+			AnchorPane.bottomAnchor="262.0">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<font>
+				<Font size="16.0" />
+			</font>
+
+		</TextField>
+		<PasswordField fx:id="password" layoutX="257.0"
+			layoutY="228.0" maxWidth="276.0" minWidth="122.0" prefHeight="34.0"
+			prefWidth="276.0" promptText="Password"
+			style="-fx-background-color: #2D344B; -fx-border-color: #2D344B #2D344B #a0a2ab #2D344B;">
+			<font>
+				<Font size="16.0" />
+			</font>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+		</PasswordField>
+		<ImageView fitHeight="34.0" fitWidth="51.0" layoutX="208.0"
+			layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../MAIN/images/004-man-user.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="34.0" fitWidth="51.0" layoutX="208.0"
+			layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../MAIN/images/003-lock.png" />
+			</image>
+		</ImageView>
+		<CheckBox fx:id="remember" layoutX="226.0" layoutY="289.0"
+			mnemonicParsing="false" prefHeight="53.0" prefWidth="163.0"
+			text="Remember Me" textFill="#a0a2ab">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</CheckBox>
+		<Button fx:id="login" layoutX="424.0" layoutY="295.0"
+			mnemonicParsing="false" onAction="#loginAction" prefHeight="34.0"
+			prefWidth="101.0" style="-fx-background-color: #2196f3;" text="Login"
+			textFill="#f2f2f2">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Button>
+		<Button fx:id="forgotpassword" layoutX="247.0" layoutY="354.0"
+			mnemonicParsing="false" prefHeight="34.0" prefWidth="245.0"
+			style="-fx-background-color: #2D344B;" text="Forgot password?"
+			textFill="#a0a2ab" underline="true">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Button>
+		<ImageView fx:id="progress" fitHeight="45.0" fitWidth="45.0"
+			layoutX="348.0" layoutY="396.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="@../MAIN/images/31.gif" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>
